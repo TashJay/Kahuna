@@ -8,7 +8,7 @@ const projects = [
     title: 'Highridge Apartments',
     category: 'High-Rise Residential',
     description: "Engineered for intense altitudes and weathering. Our exterior coatings deliver a professional finish that withstands harsh conditions, offering structural defense and long-lasting visual appeal.",
-    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=1200&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1200&auto=format&fit=crop',
     icon: ShieldCheck,
     highlight: 'Professional Finish & Maximum Durability'
   },
@@ -17,7 +17,7 @@ const projects = [
     title: 'Urban Mushroom Garden',
     category: 'Sustainable Agriculture Facility',
     description: "Rooted in sustainability. We formulated non-toxic, eco-friendly primers ensuring a zero-VOC emission controlled environment critical for delicate urban farming ecosystems.",
-    image: 'https://images.unsplash.com/photo-1582211517578-831fb2d88ebd?q=80&w=1200&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1518531980838-89c0ad5d45d9?q=80&w=1200&auto=format&fit=crop',
     icon: Leaf,
     highlight: 'Eco-Friendly & Non-Toxic'
   },
@@ -26,7 +26,7 @@ const projects = [
     title: 'Premium Residential Makeover',
     category: 'Luxury Interior',
     description: "The complete transformation using 'Sky Elite Matt Emulsion'. Showcasing pristine color-matching precision over custom architectural moldings with an ultra-smooth, flawless finish.",
-    image: 'https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=1200&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=1200&auto=format&fit=crop',
     icon: Palette,
     highlight: 'Elite Matt Emulsion & Color Precision'
   }

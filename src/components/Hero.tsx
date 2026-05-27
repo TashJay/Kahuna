@@ -57,7 +57,7 @@ export function Hero() {
           {/* Main big image slot (conceptual) */}
           <div className="absolute right-0 top-1/2 -translate-y-1/2 w-4/5 h-[80%] bg-slate-800 outline outline-1 outline-slate-700 shadow-2xl relative overflow-hidden group">
              <img 
-               src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop" 
+               src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1200&auto=format&fit=crop" 
                alt="Luxury home exterior" 
                className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-700" 
              />
@@ -73,7 +73,7 @@ export function Hero() {
           {/* Accent small image slot */}
           <div className="absolute left-0 bottom-[10%] w-[45%] h-[40%] bg-white p-2 shadow-2xl border border-slate-100">
              <img 
-               src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=800&auto=format&fit=crop" 
+               src="https://images.unsplash.com/photo-1560185007-cde436f6a4d0?q=80&w=800&auto=format&fit=crop" 
                alt="Interior finish" 
                className="w-full h-full object-cover"
              />
