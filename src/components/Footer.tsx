@@ -21,6 +21,8 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
           <div className="col-span-1 md:col-span-1">
              <div className="flex items-center gap-2 mb-6">
+                {/* INSTRUCTIONS: Upload your logo file to /public/images/logo.png and uncomment the img tag below */ }
+                {/* <img src="/images/logo.png" alt="Sky Quality Paints" className="h-8 w-auto object-contain" /> */}
                 <PaintBucket className="h-6 w-6 text-sky-gold" />
                 <div className="flex flex-col">
                   <span className="font-serif text-lg font-bold text-white leading-tight">SKY QUALITY</span>
@@ -45,10 +47,10 @@ export function Footer() {
           <div>
             <h4 className="text-white font-semibold mb-6">Documentation</h4>
             <ul className="space-y-3 text-sm">
-              <li><a href="#" className="hover:text-white transition-colors">Architectural Price List PDF</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Product Brochure</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">KEBS Certifications</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Strategic Plan - Phase 3</a></li>
+              <li><a href="/docs/price-list.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Architectural Price List PDF</a></li>
+              <li><a href="/docs/brochure.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Product Brochure</a></li>
+              <li><a href="/docs/kebs-cert.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">KEBS Certifications</a></li>
+              <li><a href="/docs/strategic-plan.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Strategic Plan - Phase 3</a></li>
             </ul>
           </div>
 

@@ -37,7 +37,9 @@ export function Hero() {
               Explore Our Work <ChevronRight className="w-4 h-4" />
             </a>
             <a
-              href="#products"
+              href="/docs/brochure.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-8 py-4 border border-slate-500 text-white font-medium hover:border-slate-300 hover:bg-white/5 transition-colors text-center"
             >
               View Product Brochure

@@ -41,10 +41,10 @@ export function Services() {
              return (
                <motion.div 
                  key={idx}
-                 initial={{ opacity: 0, y: 20 }}
+                 initial={{ opacity: 0, y: 40 }}
                  whileInView={{ opacity: 1, y: 0 }}
-                 viewport={{ once: true }}
-                 transition={{ delay: idx * 0.15 }}
+                 viewport={{ once: true, margin: "-50px" }}
+                 transition={{ duration: 0.6, delay: idx * 0.15, ease: "easeOut" }}
                  className="bg-white/5 border border-white/10 p-8 backdrop-blur-sm hover:border-sky-gold/50 transition-all group"
                >
                  <div className="w-14 h-14 bg-sky-gold/10 text-sky-gold flex items-center justify-center rounded-sm mb-6 group-hover:scale-110 transition-transform">

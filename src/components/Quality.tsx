@@ -36,9 +36,9 @@ export function Quality() {
               </div>
             </div>
 
-            <button className="mt-8 flex items-center gap-2 text-sm font-semibold text-sky-900 border border-slate-200 px-5 py-3 hover:bg-slate-50 transition-colors rounded-sm">
+            <a href="/docs/strategic-plan.pdf" target="_blank" rel="noopener noreferrer" className="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-sky-900 border border-slate-200 px-5 py-3 hover:bg-slate-50 transition-colors rounded-sm">
               <FileText className="w-4 h-4" /> Download Strategic Plan - Sky Quality Paints 3.docx
-            </button>
+            </a>
           </div>
 
           {/* Certificate visual representation */}

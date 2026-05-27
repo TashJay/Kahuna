@@ -18,6 +18,8 @@ export function Navigation() {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <div className="flex items-center gap-2">
+            {/* INSTRUCTIONS: Upload your logo file to /public/images/logo.png and uncomment the img tag below */ }
+            {/* <img src="/images/logo.png" alt="Sky Quality Paints" className="h-10 w-auto object-contain" /> */}
             <PaintBucket className="h-8 w-8 text-sky-900" />
             <div className="flex flex-col">
               <span className="font-serif text-xl font-bold text-sky-900 leading-tight">SKY QUALITY</span>

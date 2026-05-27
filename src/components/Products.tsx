@@ -10,6 +10,13 @@ const categories = [
   { name: 'Wood Finishes', icon: Brush, desc: 'Varnishes and stains to enhance natural grain.' },
 ];
 
+const priceListItems = [
+  { name: 'Sky Elite Matt Emulsion', finish: 'Ultra Matt, Washable', pack: '4L / 20L', coverage: '14-16 m²/L' },
+  { name: 'Sky Weather-Guard', finish: 'Satin, UV-Resistant', pack: '4L / 20L', coverage: '12-14 m²/L' },
+  { name: 'Premium Wood Varnish', finish: 'High Gloss / Satin', pack: '1L / 4L', coverage: '10-12 m²/L' },
+  { name: 'Eco-Prime Sealer', finish: 'Zero VOC, Flat', pack: '4L / 20L', coverage: '12-15 m²/L' },
+];
+
 export function Products() {
   return (
     <section id="products" className="py-24 bg-slate-50 border-t border-slate-200">
@@ -25,9 +32,9 @@ export function Products() {
             <p className="text-slate-300 text-lg leading-relaxed mb-8">
               From the deepest regal blues to the warmest earthy neutrals, our sophisticated tinting system ensures precise color-matching and infinite possibilities for any architectural specification.
             </p>
-            <button className="inline-flex items-center gap-2 bg-sky-gold text-sky-900 px-6 py-3 font-semibold hover:bg-sky-gold-light transition-colors rounded-sm">
+            <a href="/docs/brochure.pdf" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-sky-gold text-sky-900 px-6 py-3 font-semibold hover:bg-sky-gold-light transition-colors rounded-sm">
               <Download className="w-5 h-5" /> Download Full Color Chart & Brochure
-            </button>
+            </a>
           </div>
         </div>
 
@@ -66,9 +73,9 @@ export function Products() {
               <h3 className="font-serif text-xl font-semibold text-sky-900">Architectural Price List</h3>
               <p className="text-sm text-slate-500">Effective directly for B2B procurement & large scale orders.</p>
             </div>
-            <button className="hidden sm:flex items-center gap-2 text-sky-900 font-medium text-sm hover:text-sky-gold transition-colors block">
+            <a href="/docs/price-list.pdf" target="_blank" rel="noopener noreferrer" className="hidden sm:flex items-center gap-2 text-sky-900 font-medium text-sm hover:text-sky-gold transition-colors block">
                Download PDF <Download className="w-4 h-4" />
-            </button>
+            </a>
           </div>
           <div className="overflow-x-auto">
             <table className="w-full text-left text-sm text-slate-600">
@@ -81,30 +88,21 @@ export function Products() {
                 </tr>
               </thead>
               <tbody className="divide-y divide-slate-100">
-                <tr className="hover:bg-slate-50 transition-colors">
-                  <td className="px-8 py-5 font-medium text-sky-900">Sky Elite Matt Emulsion</td>
-                  <td className="px-8 py-5">Ultra Matt, Washable</td>
-                  <td className="px-8 py-5">4L / 20L</td>
-                  <td className="px-8 py-5">14-16 m²/L</td>
-                </tr>
-                <tr className="hover:bg-slate-50 transition-colors">
-                  <td className="px-8 py-5 font-medium text-sky-900">Sky Weather-Guard</td>
-                  <td className="px-8 py-5">Satin, UV-Resistant</td>
-                  <td className="px-8 py-5">4L / 20L</td>
-                  <td className="px-8 py-5">12-14 m²/L</td>
-                </tr>
-                <tr className="hover:bg-slate-50 transition-colors">
-                  <td className="px-8 py-5 font-medium text-sky-900">Premium Wood Varnish</td>
-                  <td className="px-8 py-5">High Gloss / Satin</td>
-                  <td className="px-8 py-5">1L / 4L</td>
-                  <td className="px-8 py-5">10-12 m²/L</td>
-                </tr>
-                 <tr className="hover:bg-slate-50 transition-colors">
-                  <td className="px-8 py-5 font-medium text-sky-900">Eco-Prime Sealer</td>
-                  <td className="px-8 py-5">Zero VOC, Flat</td>
-                  <td className="px-8 py-5">4L / 20L</td>
-                  <td className="px-8 py-5">12-15 m²/L</td>
-                </tr>
+                {priceListItems.map((item, idx) => (
+                  <motion.tr 
+                    key={item.name}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, margin: "-20px" }}
+                    transition={{ duration: 0.5, delay: idx * 0.1 }}
+                    className="hover:bg-slate-50 transition-colors"
+                  >
+                    <td className="px-8 py-5 font-medium text-sky-900">{item.name}</td>
+                    <td className="px-8 py-5">{item.finish}</td>
+                    <td className="px-8 py-5">{item.pack}</td>
+                    <td className="px-8 py-5">{item.coverage}</td>
+                  </motion.tr>
+                ))}
               </tbody>
             </table>
           </div>
