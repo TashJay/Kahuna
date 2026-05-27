@@ -1,0 +1,6 @@
+{
+  "name": "Sky Quality Paints",
+  "description": "Professional portfolio and product showcase for Sky Quality Paints Ltd.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
